@@ -20,12 +20,7 @@ namespace SuperheroesProject.Controllers
             return View();
         }
 
-        // GET: Superheroes/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
+  
         // POST: Superheroes/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
