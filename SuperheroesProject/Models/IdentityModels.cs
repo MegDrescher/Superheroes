@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -30,9 +31,7 @@ namespace SuperheroesProject.Models
             return new ApplicationDbContext();
         }
 
-        public DbSet<Superhero> Superhereos { get; set; }
-
-
+        public DbSet<Superhero> Superheroes { get; set; }
     }
 
  

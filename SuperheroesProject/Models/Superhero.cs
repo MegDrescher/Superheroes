@@ -10,14 +10,24 @@ namespace SuperheroesProject.Models
     {
         [Key]
         public int ID { get; set; }
+        [Display(Name = "Name")]
+
+       
         public string Name { get; set; }
 
+        [Display(Name = "Alter Ego")]
         public string AlterEgoName { get; set; }
 
+        [Display(Name = "Primary Ability")]
         public string PrimaryAbility { get; set; }
+
+        [Display(Name = "Secondary Ability")]
         public string SecondaryAbility { get; set; }
 
+        [Display(Name = "Catch Phrase")]
         public string CatchPhrase { get; set; }
+
+        
         
 
 

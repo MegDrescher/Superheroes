@@ -13,7 +13,7 @@ namespace SuperheroesProject.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201901081604503_Superheroes"; }
+            get { return "201901091601290_Superheroes"; }
         }
         
         string IMigrationMetadata.Source

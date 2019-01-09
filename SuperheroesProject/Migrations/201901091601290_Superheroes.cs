@@ -8,7 +8,7 @@ namespace SuperheroesProject.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.Superheroes",
+                "dbo.AspNetRoles",
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
@@ -36,6 +36,11 @@ namespace SuperheroesProject.Migrations
                     {
                         ID = c.Int(nullable: false, identity: true),
                         Name = c.String(),
+                        AlterEgoName = c.String(),
+                        PrimaryAbility = c.String(),
+                        SecondaryAbility = c.String(),
+                        CatchPhrase = c.String(),
+                        Image = c.String(),
                     })
                 .PrimaryKey(t => t.ID);
             
